@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="program.js"></script>
+    <script>
+        function message( )
+        {
+        alert("tekan ok untuk memulai")
+        }
+        function myfunction(){
+            alert("mohon coba lagi")
+        }
+        function myfunction2(txt)
+        {
+            alert(txt)
+        }
+        var d = new Date( )
+        var weekday= new Array("日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日")
+        var monthname= new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+        document.write(weekday[d.getDay( )] + " ")
+        document.write(d.getDate( ) + ". ")
+        document.write(monthname[d.getMonth( )] + " ")
+        document.write(d.getFullYear( )) 
+    </script>
+
+</head>
+<body onload="message()">
+    <script>
+        document.write("<h1>JaVa ScRiPt<h1>")
+    </script>
+    <form>
+        <input type="button" onclick="myfunction( )" value="Call function">
+    </form>
+        <p><h3>press the button to show message</p> </h3>
+        <form>
+            <input type="button"
+            onclick="myfunction2('selamat datang')"
+            value="masuk">
+            <input type="button"
+            onclick="myfunction2('selamat tinggal')"
+            value="keluar">
+            </form>
+            <p>
+            ketika tombol di tekan maka salah satu
+            fungsi akan memanggil pesan untuk di
+            tampilkan
+            </p> 
+            
+    
+</body>
+</html>
